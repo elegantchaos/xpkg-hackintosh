@@ -2,7 +2,8 @@ import XPkgPackage
 
 let links = [
     ["Scripts/mount-efi.sh"],
-    ["Scripts/mount-oc.sh"]
+    ["Scripts/mount-oc.sh"],
+    ["Scripts/aliases.sh", "~/.local/share/shell-hooks/interactive/hackintosh"]
 ]
 
 let arguments = CommandLine.arguments
