@@ -1,7 +1,9 @@
-sudo diskutil mount disk1s1
-open /Volumes/EFI/EFI
-open /Volumes/EFI/EFI/config.plist
-cd /Volumes/EFI/EFI/Clover
+sudo mkdir -p /Volumes/EFI-CLOVER
+sudo diskutil mount -mountPoint /Volumes/EFI-CLOVER disk1s1
+
+open /Volumes/EFI-CLOVER/EFI
+open /Volumes/EFI-CLOVER/EFI/Clover/config.plist
+cd /Volumes/EFI-CLOVER/EFI/Clover
 if [[ "$(which fork)" != "" ]]
 then
     fork
